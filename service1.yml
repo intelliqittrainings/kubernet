@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
- name: httpd-service
+ name: nginx-service
  labels:
   author: intelliqit
 spec:
@@ -12,5 +12,5 @@ spec:
     port: 80
     nodePort: 30008
  selector:
-  type: frontend
+  type: proxy
   author: intelliqit
